@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--base-font-size);
+  font-family: var(--base-font-family);
+  color: var(--base-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--base-bg-color);
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: var(--base-font-size);
+  line-height: 18px;
+  color: var(--base-text-color);
+}
+
+.wrapper {
+  min-height: 261px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container__title {
+  width: 100%;
+}
+
+.container__title h1 {
+  font-weight: bold;
+  font-size: 42px;
+  max-height: 41px;
+  margin: 10px 5px;
+}
+
+.container__box {
+  flex: 1 1 90px;
+  height: 90px;
+  margin: 5px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.box1 {
+  background-color: #af16b3;
+}
+
+.box2 {
+  background-color: #16b3a9;
+}
+
+.box3 {
+  background-color: #d09d18;
+}
+
+.box3,
+.box6 {
+  flex-basis: 190px;
+}
+
+.box4 {
+  background-color: #16b34b;
+}
+
+.box5 {
+  background-color: #b31616;
+}
+
+.box6 {
+  background-color: #48d018;
+}
+
+.box7 {
+  flex-basis: 290px;
+  background-color: #000c16;
+  align-items: center;
+}
+
+.box8 {
+  background-color: #16b3a9;
+}
+
+.container__image1,
+.container__image2,
+.container__image3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container__image1 {
+  top: 18px;
+}
+
+.container__image2 {
+  height: 35px;
+  width: 38px;
+  top: 15px;
+}
+
+.container__image3 {
+  height: 45px;
+  width: 35px;
+  top: 10px;
+}
+
+/* Поставил тут костыль, не понял почему картинка начала вылазить за пределы блока */
+.container__image4 {
+  position: relative;
+  top: 1.8px;
+}
+
+.container__link-type-1 {
+  padding: 0 0 6px 6px;
+}
+
+.container__link-type-2 {
+  padding-left: 10px;
+}

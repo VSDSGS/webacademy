@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #292325;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-nav a,
+.author {
+  text-decoration: none;
+}
+
+.page-nav {
+  height: 90px;
+  border-bottom: 3px solid black;
+  width: calc(94% + 2px);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  z-index: 1;
+}
+
+.page-link {
+  font-size: 18px;
+  color: black;
+  display: inline-block;
+  margin: 0 55px;
+  line-height: 90px;
+}
+
+.page-link:active,
+.page-link:hover {
+  color: rgb(98, 98, 98);
+}
+
+.Instagram,
+.Pinterest,
+.Twitter,
+.Facebook {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 21px;
+  position: absolute;
+}
+
+.image {
+  width: 21px;
+  height: 21px;
+}
+
+.Instagram {
+  left: 97.5%;
+}
+
+.Pinterest {
+  left: 93.5%;
+}
+
+.Twitter {
+  left: 89.5%;
+}
+
+.Facebook {
+  left: 85.5%;
+}
+
+/* Section nav ends here */
+
+.page-content {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94%;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.author-content {
+  padding: 20px;
+  letter-spacing: 0.25em;
+  line-height: 1.2em;
+  color: rgba(0, 0, 0, 0);
+}
+
+.author {
+  color: black;
+}
+
+.promotion-banner {
+  font-size: 0;
+}
+
+.child-first,
+.child-second,
+.child-third {
+  display: inline-block;
+  height: 689px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.child-first {
+  width: 32.7%;
+  background-image: url(./images/1.jpg);
+}
+
+.child-second {
+  width: 33%;
+  position: relative;
+  margin: 0 0.8%;
+  background-color: #f7aea4;
+}
+
+.child-third {
+  width: 32.7%;
+  background-image: url(./images/2.jpg);
+}
+
+.item-description {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 20px;
+  width: 100%;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  width: 160px;
+  background-color: white;
+  border: 2px solid white;
+}
+
+.btn:hover {
+  border: 2px solid #292325;
+}
+
+.page-contact {
+  margin: 20px 0;
+  width: 100%;
+  font-size: 0;
+}
+
+.top {
+  height: 120px;
+  font-size: 18px;
+  line-height: 120px;
+  background-image: url(./images/12.jpg);
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  background-position: 50% 50%;
+}
+
+.left-block,
+.right-block {
+  display: inline-block;
+  height: 436px;
+  position: relative;
+  width: 49.6%;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -70px;
+}
+
+.left-block {
+  margin-right: 0.4%;
+  background-image: url(./images/3.jpg);
+}
+
+.right-block {
+  margin-left: 0.4%;
+  background-image: url(./images/4.jpg);
+}
+
+.meet-btn,
+.contact-btn {
+  width: 160px;
+  height: 50px;
+  position: absolute;
+  top: 75%;
+  right: 12%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid white;
+  background-color: white;
+}
+
+.meet-btn:hover {
+  border: 2px solid black;
+}
+
+.contact-btn:hover {
+  border: 2px solid black;
+}
+
+.btn,
+.meet-btn,
+.contact-btn:hover {
+  transition: border 0.5s;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 38px;
+  padding: 35px;
+}
+
+.image-wrapper {
+  width: 100%;
+  font-size: 0;
+}
+
+.image-inside {
+  width: 12%;
+  height: 12%;
+  margin: 0 0.2860536%;
+}
+
+.image-inside:first-child {
+  margin-left: 0;
+}
+
+.image-inside:last-child {
+  margin-right: 0;
+}
+
+h4 {
+  padding: 100px 0 50px;
+}
+
+.subscribe {
+  margin: 20px;
+  display: block;
+  height: 500px;
+}
+
+.email-form,
+.last-btn {
+  width: 338px;
+  height: 33px;
+  font-size: 14px;
+  border: 1px solid black;
+}
+
+.email-form {
+  padding-left: 21px;
+  outline: red;
+}
+
+.email-form:hover {
+  border: 3px solid black;
+}
+
+.page-footer {
+  background: rgb(241, 218, 186);
+  width: 100%;
+  line-height: 57px;
+  font-size: 13px;
+}
+
+.last-btn {
+  margin-top: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: black;
+}
+
+.last-btn:hover {
+  background-color: #c0ad93;
+  transition: 0.5s;
+  cursor: pointer;
+}
